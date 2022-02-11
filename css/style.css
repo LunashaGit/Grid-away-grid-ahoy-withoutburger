@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+*, *::before, *::after {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1920px;
+  background-color: #E6EFF6;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+}
+
+nav {
+  margin-top: 17%;
+  margin-left: 10%;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+nav ul li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: solid 1px #000;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  color: #324a9e;
+}
+nav ul li a:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.1s;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  place-items: center;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #FFF;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  min-height: 350px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  padding: 2.5%;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+.card img {
+  width: 25%;
+  height: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+.card h2 {
+  color: #324a9e;
+  font-size: 100%;
+}
+.card hr {
+  border: 1px solid grey;
+  width: 50%;
+}
+.card p {
+  margin: 2%;
+}
+.card a {
+  color: #324a9e;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4%;
+  margin-bottom: 7.5%;
+}
+.card a:hover {
+  color: white;
+  background-color: #499ed6;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease-in-out;
+}
+
+img, h2, hr {
+  margin-top: 7.5%;
+  margin-bottom: 7.5%;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 950px) {
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav {
+    display: none;
+  }
+
+  body {
+    display: block;
+  }
+}
+@media screen and (max-width: 950px) and (min-width: 650px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav {
+    display: none;
+  }
+
+  body {
+    display: block;
+  }
+}
+@media screen and (max-width: 650px) and (min-width: 0px) {
+  section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  nav {
+    display: none;
+  }
+
+  body {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
